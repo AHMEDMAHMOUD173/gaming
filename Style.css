@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover; 
+    
+}
+.overlay{
+
+    width: 100%;
+    height: 100vh;
+    background-image : linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+    
+}
+
+.text{
+  
+    padding-top: 300px;
+    text-align: center;
+}
+
+.text span{
+    color:rgba(247, 7, 118, 0.7);
+}
+
+.text h2{
+    color: white;
+ 
+}
+
+.text p{
+    padding-top:15px ;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.text .gtp{
+    width: 100px;
+    height: 35px;
+    color: white;
+    border: 2px solid rgba(247, 7, 118, 0.7);;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: 1.5s;
+}
+
+.text:hover .gtp{
+  background-color: rgba(247, 7, 118, 0.7);;
+}
+
+.navbar {
+    align-items: center;
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* padding: 30px 15px; */
+    background: rgba(51, 51, 51, 0.236);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 1.5s;
+    z-index: 1;
+}
+.navbar:hover{
+
+    width: 300px;
+}
+
+.navbar:hover a {
+    font-size: 25px; 
+}
+
+.navbar img{
+    width: 100px;
+    margin: auto;
+    object-fit: cover;
+    transform-origin: center center;
+    animation: rotateImage 3s linear infinite;
+    transition: 1.5s;
+}
+
+.navbar:hover img{
+    width: 140px;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+}
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 180px;
+}
+
+.navbar li {
+    display: block;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding-bottom: 50px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 1.5s;
+}
+
+.navbar a:hover {
+   
+    color:rgba(247, 7, 118, 0.7);
+}
+
+.dropdown {
+    
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-content {
+    text-align: left;
+    width: 200px;
+    display: none;
+    position: absolute;
+    padding: 0px 100px;
+    right: 100%; 
+    bottom: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 12px;
+    right: 100%;
+    bottom: 0;
+    display: block;
+    text-decoration: none;
+    
+   
+}
+
+.dropdown-content a:hover {
+    
+    color: rgba(247, 7, 118, 0.7);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.pictures{
+    
+   background: linear-gradient(45deg, #132743, #5585b5);
+}
+
+
+.pictures h2{
+    letter-spacing: 2px;
+    text-decoration-line: underline ;
+    text-decoration-color: rgba(247, 7, 118, 0.7);
+    color: white;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.action-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.card{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    /* height: 300px; */
+    transition: 2s;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 7, 118, 0.7);
+    top: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: 2s;
+
+}
+.card::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 7, 118, 0.7);
+    bottom: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: 2s;
+
+}
+
+.card:hover.card::after{
+    transform: skew(90deg);
+}
+
+.card:hover.card::before{
+    transform: skew(90deg);
+}
+
+.part-1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mrl{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.part-2{
+    
+    display: flex;
+    align-items: center; 
+    padding: 15px 170px 0 170px;
+    justify-content: space-between;
+
+}
+
+
+
+
+.racing-img{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.racing-img img {
+    width: 465px; 
+    height: 600px; 
+    margin: 5px; 
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    
+}
+ 
+
+.one{
+    position: relative;
+    overflow: hidden;
+     width: 25%; 
+}
+
+.over-lay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.one:hover .over-lay{
+    top: 0;
+}
+
+
+.two{
+    position: relative;
+    overflow: hidden;
+     width: 25%; 
+
+    /* overflow: hidden; */
+}
+
+.over-lay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.two:hover .over-lay{
+    top: 0;
+}
+
+.three{
+    position: relative;
+    overflow: hidden;
+     width: 25%; 
+
+    /* overflow: hidden; */
+}
+
+.over-lay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.three:hover .over-lay{
+    
+    top: 0;
+}
+
+/* next */
+.Zombie-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .zombie-img img {
+    width: 465px; 
+    height: 600px; 
+   
+    position: relative;
+     
+ }
+  
+ 
+ .one-1{
+     position: relative;
+     overflow: hidden;
+      width: 25%; 
+ }
+ 
+ .over-lay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     top: 100%;
+     right: 0;
+     bottom: 0;
+     overflow: hidden;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 2s;
+ }
+ 
+ .one-1:hover .over-lay{
+     top: 0;
+ }
+ 
+ 
+ .two-2{
+     position: relative;
+     overflow: hidden;
+      width: 25%; 
+ 
+     /* overflow: hidden; */
+ }
+ 
+ .over-lay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     top: 100%;
+     right: 0;
+     bottom: 0;
+     overflow: hidden;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 2s;
+ }
+ 
+ .two-2:hover .over-lay{
+     top: 0;
+ }
+ 
+ .three-3{
+     position: relative;
+     overflow: hidden;
+      width: 25%; 
+ 
+     /* overflow: hidden; */
+ }
+ 
+ .over-lay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     top: 100%;
+     right: 0;
+     bottom: 0;
+     overflow: hidden;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 2s;
+ }
+ 
+ .three-3:hover .over-lay{
+     
+     top: 0;
+ }
+
+ .btn{
+    width: 80px;
+    height: 40px;
+    border: 2px solid rgba(247, 7, 118, 0.7);
+    color: white;
+    border-radius: 8PX;
+    background-color: transparent;
+    transition: 0.5s;
+ }
+
+ .btn:hover{
+    background-color: rgba(247, 7, 118, 0.7);
+ }
